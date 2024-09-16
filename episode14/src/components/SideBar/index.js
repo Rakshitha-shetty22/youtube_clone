@@ -20,10 +20,9 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
     const ismenuopen = useSelector((store) => store.app.ismenuopen);
   return (
-    <>
       <div className="w-[11%]">
         {ismenuopen && (
-          <div className="fixed top-[59px] w-[11%]">
+          <div className="fixed top-[58px] w-[11%] z-50 bg-white">
          <Link to="/"><SideBarCard icon={<HomeOutlinedIcon />} label="Home" /></Link> 
             <SideBarCard
               icon={<img src={shortsIcon} alt="Shorts Icon" />}
@@ -66,8 +65,6 @@ const SideBar = () => {
           </div>
         ) }
       </div>
-
-    </>
   )
 }
 

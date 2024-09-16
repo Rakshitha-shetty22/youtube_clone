@@ -13,15 +13,13 @@ const ButtonContainer = () => {
 
   useEffect(() => fetchData, []);
   return (
-    <div
-      className="flex"
-      style={{ scrollbarWidth: "none" }}
-    >
+    <div className="w-full flex overflow-x-auto" style={{ scrollbarWidth: "none" }}>
       {buttonList.map((i) => (
         <Buttons data={i} key={i.id} />
       ))}
-    </div>
+  </div>
   );
+  
 };
 
 export default ButtonContainer;

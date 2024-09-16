@@ -19,12 +19,12 @@ const WatchPage = () => {
   console.log("jj",chatId);
 
   return (
-    <div className="pt-10 pl-[210px]">
+    <div className="pt-16 pl-[48px]">
       <div className="flex w-full">
         <iframe
           width="1200"
           height="700"
-          src={`https://www.youtube.com/embed/${videoId}`}
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
